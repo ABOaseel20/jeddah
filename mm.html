@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة تهنئة باليوم الوطني</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- الهيدر الأخضر -->
+    <header>
+        <h1>بطاقة تهنئة باليوم الوطني</h1>
+    </header>
+    <div class="box">
+        <img src="media.jpg" alt="">
+    </div>
+    <div>
+        <p>تهديكم إذاعة الرياض خدمة إصدار بطاقة التهنئة الخاصة بكم بمناسبة اليوم الوطني تحت شعار "نحلم ونحقق</p>
+    </div>
+
+    <div class="container">
+        <input type="file" id="image-upload" accept="image/*">
+        <input type="text" id="name-input" placeholder="أدخل اسمك هنا">
+        <select id="image-type">
+            <option value="portrait">طولي</option>
+            <option value="landscape">عرضي</option>
+        </select>
+        <button id="generate-btn">توليد البطاقة</button>
+        <br><br>
+        <canvas id="image-canvas"></canvas>
+        <br>
+        <a id="download-btn" download="card.jpg">تحميل البطاقة</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
